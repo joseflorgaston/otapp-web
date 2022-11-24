@@ -1,11 +1,11 @@
 <template>
-  <v-app>
+  <v-app >
     <v-navigation-drawer width="120" class="bg-main text-caption">
       <route-links-vue></route-links-vue>
     </v-navigation-drawer>
     <app-bar-vue></app-bar-vue>
     <v-main>
-        <NuxtPage></NuxtPage>
+      <NuxtPage />
     </v-main>
   </v-app>
 </template>
@@ -14,7 +14,6 @@
 import AppBarVue from './components/layout/AppBar.vue';
 import RouteLinksVue from './components/layout/RouteLinks.vue';
 </script>
-
 <style>
 .navigation-icon {
   width: 100%;
@@ -43,6 +42,7 @@ import RouteLinksVue from './components/layout/RouteLinks.vue';
   transition-duration: 0.3s;
   transition-property: transform;
 }
+
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {

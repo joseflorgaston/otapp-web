@@ -21,7 +21,7 @@
 <script setup lang="ts">
 const routes = [
     {
-        to: "/",
+        to: "/explore",
         title: "Explorar",
         icon: getImageUrl('search.svg')
     },
@@ -36,7 +36,7 @@ const routes = [
         icon: getImageUrl('star.svg')
     },
     {
-        to: "/publish",
+        to: "/mycars",
         title: "Mis coches",
         icon: getImageUrl('car.svg')
     },

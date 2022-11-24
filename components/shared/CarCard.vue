@@ -21,7 +21,6 @@
 </template>
 
 <script setup lang="ts">
-import { emit } from 'process';
 
 interface CarCard {
     id: number,
