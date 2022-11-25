@@ -1,0 +1,59 @@
+.navigation-icon {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: transparent !important;
+}
+  
+.main-active-link {
+    background-color: aliceblue !important;
+}
+
+.primary-color {
+    color: #37394e !important;
+}
+
+.bg-primary-color {
+    background-color: #37394e !important;
+}
+
+.secondary-color {
+    color: #E66C02 !important;
+}
+
+.bg-secondary-color {
+    background-color: #E66C02 !important;
+}
+  
+.hvr-grow {
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+  
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.05);
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.filter-primary:hover {
+    filter: drop-shadow(0 0 2em #37394e);
+}
+
+.filter-secondary:hover {
+    filter: drop-shadow(0 0 2em #9C8B4F);
+}
+
+.border-all {
+    border: solid;
+    border-width: 1px;
+    border-color: gainsboro;
+}
