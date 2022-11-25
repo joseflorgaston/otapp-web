@@ -1,5 +1,5 @@
 <template>
-    <v-card class="hvr-grow car-card text-caption border-all">
+    <v-card class="hvr-grow filter-secondary text-caption border-all">
         <div class="px-2">{{ author }}</div>
         <v-carousel style="height: 100%;" hide-delimiters :show-arrows="'hover'">
             <v-carousel-item v-for="(image, i) in images" :key="i" :src="image" height="200" lazy cover />
@@ -43,17 +43,5 @@ function getHeartColor(isFavorite: boolean):string|undefined {
 }
 </script>
 <style>
-.car-card:hover {
-    cursor: pointer;
-    filter: drop-shadow(0 0 2em #9C8B4F);
-}
 
-.car-card {
-    will-change: filter;
-}
-.border-all {
-    border: solid;
-    border-width: 1px;
-    border-color: gainsboro;
-}
 </style>

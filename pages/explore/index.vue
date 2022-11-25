@@ -1,13 +1,14 @@
 <template>
     <div class="my-2">
+        <filter-expansion-panel-vue />
         <v-row class="mx-2 my-2" v-show="!isLoadingCars">
-            <v-col v-for="(car, i) in cars" :key="i" cols="12" sm="4" lg="3" xl="2" class="flex-grow-0 flex-shrink-0">
-                <car-card-vue @click.prevent="goToDetailsPage(car.id)" class="gradient-border" v-bind="car" @setToFavorite="setCarToFavorite(car.id)" />
+            <v-col v-for="(car, i) in cars" :key="i" cols="12" sm="4" lg="3" xl="2">
+                <car-card-vue @click.prevent="goToDetailsPage(car.id)" v-bind="car" @setToFavorite="setCarToFavorite(car.id)" />
             </v-col>
         </v-row>
         <div v-show="isLoadingCars">
             <div class="d-flex justify-center align-center" style="height: 400px;">
-                <v-progress-circular indeterminate color="bg-main" :size="150">
+                <v-progress-circular indeterminate color="bg-primary-color" :size="150">
                     <h4>Cargando ...</h4>
                 </v-progress-circular>
             </div>
@@ -17,6 +18,7 @@
 
 <script setup lang="ts">
 import CarCardVue from '~~/components/shared/CarCard.vue';
+import FilterExpansionPanelVue from '~~/components/explore/FilterExpansionPanel.vue';
 import { Ref, ref, Suspense } from 'vue';
 import { debounce } from 'vue-debounce'
 

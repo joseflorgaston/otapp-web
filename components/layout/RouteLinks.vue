@@ -53,7 +53,7 @@ function getImageUrl(name: string) {
 }
 </script>
 
-<style>
+<style scoped>
 .filter-white {
     filter: invert(99%) sepia(0%) saturate(2453%) hue-rotate(181deg) brightness(126%) contrast(89%);
 }
