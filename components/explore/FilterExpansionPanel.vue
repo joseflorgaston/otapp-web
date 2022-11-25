@@ -58,7 +58,7 @@
                     </v-col>
                 </v-row>
                 <div class="d-flex justify-end">
-                    <v-btn class="bg-main text-white d-flex">
+                    <v-btn class="bg-primary-color text-white d-flex">
                         Filtrar <v-icon class="mx-1">mdi-filter</v-icon>
                     </v-btn>
                 </div>

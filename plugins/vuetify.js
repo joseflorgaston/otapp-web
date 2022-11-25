@@ -15,12 +15,16 @@ export default defineNuxtPlugin(nuxtApp => {
     theme: {
       dark: true,
       themes: {
-        light: {
+        dark: true,
+        colors: {
           primary: '#f1f1f1',
           secondary: '#b0bec5',
           accent: '#8c9eff',
           error: '#b71c1c',
         },
+        variables: {
+          
+        }
       },
       icons: {
         defaultSet: 'fa',
